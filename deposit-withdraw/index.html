@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bank Of Dad</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-sky-950 items-center">
+    <div id="account-area" class="container mx-auto px-20 py-60">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="deposit status bg-green-200 p-4 rounded shadow">
+
+                <h5 class="text-lg font-semibold">Deposit</h5>
+
+                <h2 class="text-2xl">$ <span id="current-deposit">00</span></h2>
+
+            </div>
+
+            
+
+            <div class="withdraw status bg-red-300 p-4 rounded shadow">
+
+                <h5 class="text-lg font-semibold">Withdraw</h5>
+
+                <h2 class="text-2xl">$ <span id="current-withdraw">00</span></h2>
+
+            </div>
+
+            
+
+            <div class="balance status bg-blue-200 p-4 rounded shadow">
+
+                <h5 class="text-lg font-semibold">Balance</h5>
+
+                <h2 class="text-2xl">$ <span id="current-balance">00</span></h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+
+            <div class="submit-area bg-white p-4 rounded shadow">
+
+                <h4 class="text-lg font-semibold">Deposit Amount</h4>
+
+                <input id="deposit-amount" type="text" class="form-control mt-2 p-2 border border-gray-300 rounded w-full" placeholder="Enter deposit amount"><br>
+
+                <button id="deposit-btn" class="mt-4 bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-600">Deposit</button>
+
+            </div>
+
+            
+
+            <div class="submit-area bg-white p-4 rounded shadow">
+
+                <h4 class="text-lg font-semibold">Withdraw Amount</h4>
+
+                <input id="withdraw-amount" type="text" class="form-control mt-2 p-2 border border-gray-300 rounded w-full" placeholder="Enter withdraw amount"><br>
+
+                <button id="withdraw-btn" class="mt-4 bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-600">Withdraw</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
